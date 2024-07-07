@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Upload an Image for Prediction</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" id="imageInput" required>
+        <img id="imagePreview" class="preview" src="#" alt="Image Preview" style="display: none;"/>
+        <button type="submit">Predict</button>
+    </form>
+    <div class="result">
+        <h2 id="predictionResult" style="display: none;"></h2>
+        <h3 id="confidenceResult" style="display: none;"></h3>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
